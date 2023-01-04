@@ -23,3 +23,17 @@ window.addEventListener('resize', () => {
     menuOpenIcon.classList.remove('hidden');
   }
 })
+
+//window load
+window.addEventListener('load', () => {
+  if (window.innerWidth > 768) {
+    sideMenu.classList.add('hidden');
+    Nav.classList.remove('hidden');
+    menuOpenIcon.classList.add('hidden');
+  }
+  else {
+    Nav.classList.add('hidden');
+    menuOpenIcon.classList.remove('hidden');
+  }
+})
+

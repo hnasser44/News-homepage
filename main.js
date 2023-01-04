@@ -13,7 +13,7 @@ closeMenuIcon.addEventListener('click', () => {
 
 //window resize
 window.addEventListener('resize', () => {
-  if (window.innerWidth > 768) {
+  if (window.innerWidth > 1440) {
     sideMenu.classList.add('hidden');
     Nav.classList.remove('hidden');
     menuOpenIcon.classList.add('hidden');
@@ -26,7 +26,7 @@ window.addEventListener('resize', () => {
 
 //window load
 window.addEventListener('load', () => {
-  if (window.innerWidth > 768) {
+  if (window.innerWidth > 1440) {
     sideMenu.classList.add('hidden');
     Nav.classList.remove('hidden');
     menuOpenIcon.classList.add('hidden');
@@ -35,5 +35,6 @@ window.addEventListener('load', () => {
     Nav.classList.add('hidden');
     menuOpenIcon.classList.remove('hidden');
   }
+  console.log(window.innerWidth)
 })
 
